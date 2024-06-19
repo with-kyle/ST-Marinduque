@@ -8,8 +8,11 @@ st.set_page_config(layout="wide", page_title="About Me")
 # Add a header with your full name
 st.title('Kyle Marinduque')
 
+# Define the image directory
+image_directory = os.path.dirname(__file__)
+
 # Display your picture
-profile_image_path = 'profile.JPG'  # Ensure this path is correct
+profile_image_path = os.path.join(image_directory, 'profile.JPG')
 if os.path.exists(profile_image_path):
     profile_image = Image.open(profile_image_path)
     st.image(profile_image, width=600)
@@ -39,8 +42,10 @@ st.write("**Instagram:** [@kyleishiii](https://www.instagram.com/kyleishiii)")
 st.subheader('Gallery')
 st.write("Here are some pictures of myself:")
 
-# Define image paths
-image_paths = ['picture1.jpg', 'picture2.jpg', 'picture3.jpg']   
+# Define image paths for the gallery
+image_paths = [os.path.join(image_directory, 'picture1.jpg'), 
+               os.path.join(image_directory, 'picture2.jpg'), 
+               os.path.join(image_directory, 'picture3.jpg')]
 
 # Display images in a vertically stacked layout
 for image_path in image_paths:
