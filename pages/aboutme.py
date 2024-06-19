@@ -33,7 +33,7 @@ st.subheader('Contact Information')
 st.write("**Email:** kylemarinduque@gmail.com")
 st.write("**Phone:** 09456698047")
 st.write("**Facebook:** [Kyle Marinduque](https://www.facebook.com/kylemarinduque)")
-st.write("**Instagram:** [@kyleishiii](https://www.instagram.com/kylemarinduque)")
+st.write("**Instagram:** [@kyleishiii](https://www.instagram.com/kyleishiii)")
 
 # Image Gallery
 st.subheader('Gallery')
