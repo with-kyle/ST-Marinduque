@@ -32,7 +32,7 @@ st.markdown("### FINAL REQUIREMENTS PRESENTED BY:")
 st.header("Marinduque, Kyle of BSIS 3B")
 
 # Display image with caption and source attribution
-image_path = "./profile.JPG"
+image_path = "./profile.jpg"
 image_caption = "Kyle Marinduque"
 image_source = "Photo by Thinkstock on Freeimages.com"
 
