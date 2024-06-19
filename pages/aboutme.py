@@ -9,7 +9,7 @@ st.set_page_config(layout="wide", page_title="About Me")
 st.title('Kyle Marinduque')
 
 # Display your picture
-profile_image_path = 'profile.JPG'  # Ensure this path is correct
+profile_image_path = 'profile.jpg'  # Ensure this path is correct
 if os.path.exists(profile_image_path):
     profile_image = Image.open(profile_image_path)
     st.image(profile_image, width=600)
