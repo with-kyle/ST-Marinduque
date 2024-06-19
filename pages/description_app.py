@@ -1,4 +1,5 @@
 import streamlit as st
+import os  # Import the os module for file path operations
 from PIL import Image
 
 # Page title and configuration
