@@ -1,15 +1,13 @@
 import streamlit as st
 from PIL import Image
-import os
 
 # Page title and configuration
 st.set_page_config(layout="wide", page_title="Streamlit App Features Description")
 
-# Define image paths (absolute paths assuming they are located outside the folder of this file)
-base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-emotion_analyzer_image_path = os.path.join(base_path, 'emotion_analyzer_image.png')
-weapon_classifier_image_path = os.path.join(base_path, 'weapon_classifier_image.png')
-emotion_prediction_image_path = os.path.join(base_path, 'emotion_prediction_image.png')
+# Define image paths (assuming they are in the same directory as this file)
+emotion_analyzer_image_path = 'emotion_analyzer_image.png'
+weapon_classifier_image_path = 'weapon_classifier_image.png'
+emotion_prediction_image_path = 'emotion_prediction_image.png'
 
 # Feature 1: Emotion Analyzer
 st.header('Feature 1: Emotion Analyzer')
